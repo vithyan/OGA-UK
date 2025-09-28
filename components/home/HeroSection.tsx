@@ -1,17 +1,34 @@
-'use client';
+"use client";
 
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
-import Link from 'next/link';
-import { ArrowRight, Users, Calendar, Heart, Sparkles } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { siteConfig, stats } from '@/content/seed';
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef, useMemo } from "react";
+import Link from "next/link";
+import { ArrowRight, Users, Calendar, Heart, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { siteConfig, stats } from "@/content/seed";
+
+// Pre-generate particle positions and animations to avoid hydration mismatch
+const generateParticleData = (count: number) => {
+  const particles = [];
+  for (let i = 0; i < count; i++) {
+    particles.push({
+      id: i,
+      left: (i * 37.5) % 100, // Deterministic positioning
+      top: (i * 23.7) % 100,
+      duration: 4 + (i % 3),
+      delay: i * 0.25,
+    });
+  }
+  return particles;
+};
+
+const PARTICLE_DATA = generateParticleData(20);
 
 export function HeroSection() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"]
+    offset: ["start start", "end start"],
   });
 
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
@@ -19,13 +36,16 @@ export function HeroSection() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      ref={ref}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background with parallax */}
-      <motion.div 
+      <motion.div
         className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"
         style={{ y }}
       />
-      
+
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-yellow-400/10 rounded-full blur-3xl animate-pulse-slow" />
@@ -35,28 +55,28 @@ export function HeroSection() {
 
       {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {Array.from({ length: 20 }).map((_, i) => (
+        {PARTICLE_DATA.map((particle) => (
           <motion.div
-            key={i}
+            key={particle.id}
             className="absolute w-1 h-1 bg-yellow-400/30 rounded-full"
             style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
+              left: `${particle.left}%`,
+              top: `${particle.top}%`,
             }}
             animate={{
               y: [-20, -100],
               opacity: [0, 1, 0],
             }}
             transition={{
-              duration: Math.random() * 3 + 4,
+              duration: particle.duration,
               repeat: Infinity,
-              delay: Math.random() * 5,
+              delay: particle.delay,
             }}
           />
         ))}
       </div>
 
-      <motion.div 
+      <motion.div
         className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
         style={{ opacity, scale }}
       >
@@ -69,7 +89,9 @@ export function HeroSection() {
         >
           <div className="relative">
             <div className="w-32 h-32 bg-yellow-400 rounded-full flex items-center justify-center shadow-2xl neon-glow">
-              <span className="text-black font-bold text-4xl font-serif">OGA</span>
+              <span className="text-black font-bold text-4xl font-serif">
+                OGA
+              </span>
             </div>
             <motion.div
               className="absolute -inset-2 border-2 border-yellow-400/30 rounded-full"
@@ -109,7 +131,8 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
-          {siteConfig.tagline}. Join our community of accomplished women making a difference since {siteConfig.founded}.
+          {siteConfig.tagline}. Join our community of accomplished women making
+          a difference since {siteConfig.founded}.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -123,7 +146,10 @@ export function HeroSection() {
             <Link href="/membership" className="group">
               <Users className="mr-2" size={20} />
               Join Now
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+              <ArrowRight
+                className="ml-2 group-hover:translate-x-1 transition-transform"
+                size={20}
+              />
             </Link>
           </Button>
           <Button asChild size="xl" variant="glass">
@@ -161,7 +187,9 @@ export function HeroSection() {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1, delay: 1.6 + index * 0.1 }}
                 >
-                  {stat.prefix}{stat.value.toLocaleString()}{stat.suffix}
+                  {stat.prefix}
+                  {stat.value.toLocaleString()}
+                  {stat.suffix}
                 </motion.span>
               </div>
               <div className="text-sm text-gray-300 font-medium">
@@ -182,7 +210,9 @@ export function HeroSection() {
             <div className="glass-card px-6 py-3 border-yellow-400/30">
               <div className="flex items-center space-x-2 text-yellow-400">
                 <Sparkles size={20} />
-                <span className="font-serif font-semibold">Celebrating {siteConfig.anniversary} Years</span>
+                <span className="font-serif font-semibold">
+                  Celebrating {siteConfig.anniversary} Years
+                </span>
                 <Sparkles size={20} />
               </div>
             </div>
