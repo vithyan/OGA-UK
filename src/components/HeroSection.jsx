@@ -7,11 +7,12 @@ const HeroSection = () => {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">
-            Stanford alumni connecting the world through knowledge
+            OGA-UK alumni connecting the world through knowledge
           </h1>
           <p className="hero-description">
-            Join a global network of innovators, leaders, and changemakers. 
-            Our community spans continents, driving progress in every field.
+            Join a global network of innovators, leaders, and changemakers from the UK. 
+            Our community spans continents, driving progress in every field and fostering 
+            meaningful connections across industries.
           </p>
           <div className="hero-buttons">
             <button className="btn-primary">Join</button>

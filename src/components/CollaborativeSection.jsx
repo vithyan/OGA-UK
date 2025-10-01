@@ -8,13 +8,13 @@ const CollaborativeSection = () => {
         <div className="collaborative-content">
           <span className="section-number">03</span>
           <span className="section-subtitle">Make an Impact</span>
-          <h2 className="collaborative-title">
-            Drive change through collaborative initiatives
-          </h2>
-          <p className="collaborative-description">
-            Engage in projects that leverage Stanford's collective expertise to 
-            address global challenges and create meaningful solutions.
-          </p>
+                      <h2 className="collaborative-title">
+              Drive change through collaborative initiatives
+            </h2>
+            <p className="collaborative-description">
+              Engage in projects that leverage OGA-UK's collective expertise to 
+              address global challenges and create meaningful solutions across industries.
+            </p>
           <div className="collaborative-buttons">
             <button className="btn-get-involved">Get Involved</button>
             <button className="btn-learn-more">

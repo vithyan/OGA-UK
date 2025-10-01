@@ -12,10 +12,10 @@ const MissionSection = () => {
           </div>
           <div className="mission-content">
             <span className="mission-label">Mission</span>
-            <h2 className="mission-title">Empowering Stanford alumni worldwide</h2>
+            <h2 className="mission-title">Empowering OGA-UK alumni worldwide</h2>
             <p className="mission-description">
-              We connect, support, and inspire Stanford graduates to make a difference. Our 
-              community transcends boundaries, driving innovation and positive change.
+              We connect, support, and inspire graduates from across the UK to make a difference. Our 
+              community transcends boundaries, driving innovation and positive change globally.
             </p>
             <div className="mission-links">
               <a href="#about" className="mission-link">About us</a>
@@ -33,9 +33,9 @@ const MissionSection = () => {
         <div className="benefits-container">
           <div className="benefits-header">
             <span className="section-label">Benefits</span>
-            <h2 className="benefits-title">Your Stanford advantage</h2>
+            <h2 className="benefits-title">Your OGA-UK advantage</h2>
             <p className="benefits-subtitle">
-              Unlock exclusive opportunities designed for Stanford alumni
+              Unlock exclusive opportunities designed for UK alumni
             </p>
           </div>
           
@@ -48,7 +48,7 @@ const MissionSection = () => {
                 <span className="benefit-category">Career</span>
                 <h3 className="benefit-title">Professional development and networking</h3>
                 <p className="benefit-description">
-                  Access job boards, mentorship programs, and industry insights
+                  Access job boards, mentorship programs, and industry insights from UK professionals.
                 </p>
                 <a href="#explore" className="benefit-link">
                   Explore
@@ -65,7 +65,7 @@ const MissionSection = () => {
                 <span className="benefit-category">Resources</span>
                 <h3 className="benefit-title">Knowledge and learning</h3>
                 <p className="benefit-description">
-                  Unlimited access to research papers, webinars, and online courses
+                  Unlimited access to research papers, webinars, and online courses from UK institutions.
                 </p>
                 <a href="#access" className="benefit-link">
                   Access
@@ -82,7 +82,7 @@ const MissionSection = () => {
                 <span className="benefit-category">Community</span>
                 <h3 className="benefit-title">Global connections</h3>
                 <p className="benefit-description">
-                  Engage with alumni chapters worldwide and build lasting relationships
+                  Engage with alumni chapters across the UK and build lasting professional relationships.
                 </p>
                 <a href="#connect" className="benefit-link">
                   Connect

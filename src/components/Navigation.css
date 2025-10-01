@@ -23,6 +23,11 @@
   font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
+  text-decoration: none;
+}
+
+.nav-logo .logo-text:hover {
+  color: white;
 }
 
 .nav-menu {

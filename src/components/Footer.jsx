@@ -8,10 +8,10 @@ const Footer = () => {
       <section className="newsletter">
         <div className="newsletter-container">
           <div className="newsletter-content">
-            <h2 className="newsletter-title">Stay connected with Stanford</h2>
+            <h2 className="newsletter-title">Stay connected with OGA-UK</h2>
             <p className="newsletter-description">
               Join our community and receive the latest updates, opportunities, 
-              and insights directly in your inbox
+              and insights directly in your inbox from the UK alumni network
             </p>
             <div className="newsletter-buttons">
               <button className="btn-subscribe">Subscribe</button>
@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="signup-container">
           <div className="signup-content">
             <span className="signup-label">Stay Informed</span>
-            <p className="signup-text">Get the latest Stanford alumni news and opportunities</p>
+                        <span className="signup-text">Get the latest OGA-UK alumni news and opportunities</span>
           </div>
           <div className="signup-form">
             <input 
@@ -52,7 +52,7 @@ const Footer = () => {
         <div className="footer-container">
           <div className="footer-grid">
             <div className="footer-column">
-              <h3 className="footer-logo">Logo</h3>
+              <h3 className="footer-logo">OGA-UK</h3>
             </div>
             
             <div className="footer-column">
@@ -113,7 +113,7 @@ const Footer = () => {
           
           <div className="footer-bottom">
             <div className="footer-copyright">
-              <p>© 2024 Stanford Alumni Association. All rights reserved.</p>
+              <p>© 2024 OGA-UK Alumni Association. All rights reserved.</p>
               <div className="footer-legal-links">
                 <a href="#privacy">Privacy policy</a>
                 <a href="#terms">Terms of service</a>

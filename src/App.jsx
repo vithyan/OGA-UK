@@ -1,22 +1,29 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
-import HeroSection from './components/HeroSection';
-import GatewaySection from './components/GatewaySection';
-import CollaborativeSection from './components/CollaborativeSection';
-import MissionSection from './components/MissionSection';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import Alumni from './pages/Alumni';
+import Events from './pages/Events';
+import Network from './pages/Network';
+import Resources from './pages/Resources';
 import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <Navigation />
-      <HeroSection />
-      <GatewaySection />
-      <CollaborativeSection />
-      <MissionSection />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/alumni" element={<Alumni />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/network" element={<Network />} />
+          <Route path="/resources" element={<Resources />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   )
 }
 
