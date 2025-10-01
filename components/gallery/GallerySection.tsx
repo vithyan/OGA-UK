@@ -38,11 +38,12 @@ export function GallerySection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <GlassCard 
-                className="p-0 overflow-hidden cursor-pointer group"
+              <div 
+                className="cursor-pointer"
                 onClick={() => setSelectedAlbum(album.id)}
               >
-                <div className="relative h-64 md:h-80">
+                <GlassCard className="p-0 overflow-hidden group">
+                  <div className="relative h-64 md:h-80">
                   <img
                     src={album.coverImage}
                     alt={album.title}
@@ -79,6 +80,7 @@ export function GallerySection() {
                   </div>
                 </div>
               </GlassCard>
+              </div>
             </motion.div>
           ))}
         </div>
