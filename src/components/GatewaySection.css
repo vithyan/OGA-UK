@@ -1,0 +1,150 @@
+.gateway {
+  background-color: #2a2a2a;
+  padding: 80px 0;
+}
+
+.gateway-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.gateway-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-label {
+  color: #4f9cf9;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gateway-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+
+.gateway-subtitle {
+  color: #ccc;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.gateway-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.gateway-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gateway-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  height: 200px;
+  background: linear-gradient(135deg, #4f9cf9 0%, #7b68ee 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-placeholder {
+  font-size: 3rem;
+  filter: brightness(0) invert(1);
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-title {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.card-description {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.achievement-card {
+  background: linear-gradient(135deg, #4f9cf9 0%, #7b68ee 100%);
+}
+
+.achievement-card .card-image {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.achievement-card .card-content {
+  color: white;
+}
+
+.achievement-label {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.achievement-card .card-title {
+  color: white;
+}
+
+.achievement-card .card-description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+  .gateway {
+    padding: 60px 0;
+  }
+  
+  .gateway-container {
+    padding: 0 1rem;
+  }
+  
+  .gateway-title {
+    font-size: 2rem;
+  }
+  
+  .gateway-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .card-image {
+    height: 150px;
+  }
+  
+  .card-content {
+    padding: 1.25rem;
+  }
+}

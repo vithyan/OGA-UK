@@ -1,0 +1,173 @@
+.collaborative {
+  background-color: #1a1a1a;
+  padding: 80px 0;
+  border-top: 1px solid #333;
+}
+
+.collaborative-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.collaborative-content {
+  color: white;
+}
+
+.section-number {
+  color: #4f9cf9;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.section-subtitle {
+  color: #ccc;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 1rem;
+}
+
+.collaborative-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 1.5rem 0;
+  color: white;
+}
+
+.collaborative-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+}
+
+.collaborative-buttons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.btn-get-involved {
+  background: white;
+  color: #1a1a1a;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-get-involved:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.btn-learn-more {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.btn-learn-more:hover {
+  color: #4f9cf9;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.btn-learn-more:hover .arrow {
+  transform: translateX(4px);
+}
+
+.collaborative-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collaborative-image-placeholder {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #2d5a27 0%, #4a7c59 100%);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(45, 90, 39, 0.8) 0%,
+    rgba(74, 124, 89, 0.8) 100%
+  );
+}
+
+.collaborative-image-placeholder::before {
+  content: "🤝";
+  font-size: 4rem;
+  z-index: 1;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .collaborative {
+    padding: 60px 0;
+  }
+  
+  .collaborative-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .collaborative-title {
+    font-size: 2.2rem;
+  }
+  
+  .collaborative-description {
+    font-size: 1rem;
+  }
+  
+  .collaborative-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .btn-get-involved {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .collaborative-image-placeholder {
+    height: 300px;
+  }
+}

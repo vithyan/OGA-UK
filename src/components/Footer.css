@@ -1,0 +1,360 @@
+/* Newsletter Section */
+.newsletter {
+  background-color: #1a1a1a;
+  padding: 80px 0;
+}
+
+.newsletter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.newsletter-content {
+  color: white;
+}
+
+.newsletter-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.newsletter-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.newsletter-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-subscribe {
+  background: white;
+  color: #1a1a1a;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-subscribe:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.btn-learn-newsletter {
+  background: transparent;
+  color: white;
+  border: 1px solid #666;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-learn-newsletter:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+.newsletter-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-image-placeholder {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(135deg, #d4a574 0%, #e6b886 100%);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-image-placeholder::before {
+  content: "✉️";
+  font-size: 3rem;
+  z-index: 1;
+  position: relative;
+}
+
+/* Newsletter Signup Bar */
+.signup-bar {
+  background-color: #0a0a0a;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.signup-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.signup-content {
+  flex: 1;
+  text-align: left;
+}
+
+.signup-label {
+  color: #4f9cf9;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.signup-text {
+  color: #ccc;
+  margin: 0.5rem 0;
+}
+
+.signup-form {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  max-width: 400px;
+}
+
+.email-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: 1px solid #666;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+}
+
+.email-input::placeholder {
+  color: #999;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #4f9cf9;
+}
+
+.submit-btn {
+  background: white;
+  color: #1a1a1a;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.privacy-text {
+  color: #999;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+/* Main Footer */
+.footer {
+  background-color: #1a1a1a;
+  padding: 60px 0 20px;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(5, 1fr);
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+.footer-heading {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-copyright p {
+  color: #999;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-legal-links a {
+  color: #999;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.footer-legal-links a:hover {
+  color: white;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #4f9cf9;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    padding: 60px 0;
+  }
+  
+  .newsletter-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .newsletter-title {
+    font-size: 2rem;
+  }
+  
+  .newsletter-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn-subscribe,
+  .btn-learn-newsletter {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .signup-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .signup-content {
+    text-align: center;
+  }
+  
+  .signup-form {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .footer-container {
+    padding: 0 1rem;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  
+  .footer-legal-links {
+    justify-content: center;
+  }
+}
