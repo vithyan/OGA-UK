@@ -1,5 +1,6 @@
-import React from 'react';
-import './HeroSection.css';
+import React from "react";
+import "./HeroSection.css";
+import firstImage from "/public/Placeholder_Image_Oba.png";
 
 const HeroSection = () => {
   return (
@@ -10,9 +11,9 @@ const HeroSection = () => {
             OGA-UK alumni connecting the world through knowledge
           </h1>
           <p className="hero-description">
-            Join a global network of innovators, leaders, and changemakers from the UK. 
-            Our community spans continents, driving progress in every field and fostering 
-            meaningful connections across industries.
+            Join a global network of innovators, leaders, and changemakers from
+            the UK. Our community spans continents, driving progress in every
+            field and fostering meaningful connections across industries.
           </p>
           <div className="hero-buttons">
             <button className="btn-primary">Join</button>
@@ -20,10 +21,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="hero-image">
-          <div className="hero-image-placeholder">
-            {/* Placeholder for hero image */}
-            <div className="image-overlay"></div>
-          </div>
+          <img src={firstImage} alt="Hero" />
         </div>
       </div>
     </section>
