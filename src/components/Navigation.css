@@ -25,16 +25,9 @@
 }
 
 .nav-logo .logo-text {
-  color: #ffd700;
-  font-size: 1.8rem;
-  font-weight: bold;
-  font-style: italic;
   text-decoration: none;
+  display: inline-block;
   line-height: 1;
-}
-
-.nav-logo .logo-text:hover {
-  color: #ffd700;
 }
 
 .logo-subtitle {

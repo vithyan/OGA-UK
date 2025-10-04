@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
-import firstImage from "/public/Placeholder_Image_Oba.png";
+import firstImage from "/Placeholder_Image_Oba.png";
 
 const HeroSection = () => {
   return (

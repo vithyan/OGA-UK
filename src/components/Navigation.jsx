@@ -8,7 +8,9 @@ const Navigation = () => {
       <div className="nav-container">
         <div className="nav-logo">
           <Link to="/" className="logo-text">
-            OGA
+            <span className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 hover:animate-pulse transition-all duration-300">
+              OGA
+            </span>
           </Link>
           <span className="logo-subtitle">Old Girls' Association</span>
         </div>
