@@ -358,3 +358,53 @@
     justify-content: center;
   }
 }
+
+/* New OGA Footer Styles */
+.footer-motto {
+  color: #ffd700;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.footer-description {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.footer-contact p {
+  color: #ccc;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.footer-anniversary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffd700;
+}
+
+.anniversary-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.anniversary-years {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer-love {
+  color: #ffd700;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.follow-text {
+  color: #ccc;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}

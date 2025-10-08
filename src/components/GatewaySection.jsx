@@ -1,52 +1,60 @@
-import React from 'react';
-import './GatewaySection.css';
+import React from "react";
+import "./GatewaySection.css";
 
 const GatewaySection = () => {
   return (
     <section className="gateway">
       <div className="gateway-container">
         <div className="gateway-header">
-          <span className="section-label">Discover</span>
-          <h2 className="gateway-title">Your gateway to lifelong learning</h2>
+          <span className="section-label">Celebrating 40 Years</span>
+          <h2 className="gateway-title">Voices of Our Sisterhood</h2>
           <p className="gateway-subtitle">
-            Explore opportunities that connect OGA-UK alumni worldwide
+            Hear from accomplished women who continue to embody our motto in
+            their professional and personal lives.
           </p>
         </div>
-        
+
         <div className="gateway-cards">
-          <div className="gateway-card">
+          <div className="gateway-card testimonial-card">
             <div className="card-image">
-              <div className="card-placeholder">🎓</div>
+              <div className="card-placeholder">👩‍💼</div>
             </div>
             <div className="card-content">
-              <h3 className="card-title">Upcoming alumni gatherings</h3>
+              <blockquote className="testimonial-quote">
+                "The sisterhood I found at OGA events opened doors across
+                continents. We're truly a global family."
+              </blockquote>
+              <div className="testimonial-author">
+                <h4 className="author-name">Anushka Silva</h4>
+                <p className="author-title">International Lawyer</p>
+                <p className="author-class">Class of 2001</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="gateway-card">
+            <div className="card-image">
+              <div className="card-placeholder">🌟</div>
+            </div>
+            <div className="card-content">
+              <h3 className="card-title">Success Stories</h3>
               <p className="card-description">
-                Connect with fellow UK alumni at events and networking opportunities in major cities.
+                Discover inspiring journeys of our alumni who are making
+                remarkable contributions in their fields worldwide.
               </p>
             </div>
           </div>
-          
-          <div className="gateway-card">
-            <div className="card-image">
-              <div className="card-placeholder">💡</div>
-            </div>
-            <div className="card-content">
-              <h3 className="card-title">Success stories & insights</h3>
-              <p className="card-description">
-                Discover inspiring stories and career insights from UK alumni making global impact.
-              </p>
-            </div>
-          </div>
-          
+
           <div className="gateway-card achievement-card">
             <div className="card-image">
               <div className="card-placeholder">🏆</div>
             </div>
             <div className="card-content">
-              <span className="achievement-label">Achievements</span>
-              <h3 className="card-title">Celebrating UK alumni excellence</h3>
+              <span className="achievement-label">Excellence</span>
+              <h3 className="card-title">40 Years of Achievement</h3>
               <p className="card-description">
-                Read about stories of innovation and impact from our distinguished graduates.
+                Celebrating four decades of sisterhood, service, and remarkable
+                achievements by our alumni community.
               </p>
             </div>
           </div>

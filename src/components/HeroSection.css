@@ -20,6 +20,18 @@
   color: white;
 }
 
+.hero-motto {
+  margin-bottom: 1rem;
+}
+
+.motto-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ffd700;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
 .hero-title {
   font-size: 3.5rem;
   font-weight: 700;
@@ -39,6 +51,31 @@
 .hero-buttons {
   display: flex;
   gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  text-align: left;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 0;
 }
 
 .btn-primary {
@@ -71,6 +108,23 @@
 .btn-secondary:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: white;
+  transform: translateY(-2px);
+}
+
+.btn-tertiary {
+  background: #ffd700;
+  color: #1a1a1a;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-tertiary:hover {
+  background-color: #ffed4e;
+  transform: translateY(-2px);
 }
 
 .hero-image {

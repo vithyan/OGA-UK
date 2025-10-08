@@ -1,5 +1,5 @@
-import React from 'react';
-import './MissionSection.css';
+import React from "react";
+import "./MissionSection.css";
 
 const MissionSection = () => {
   return (
@@ -11,16 +11,22 @@ const MissionSection = () => {
             <div className="icon-placeholder">🎯</div>
           </div>
           <div className="mission-content">
-            <span className="mission-label">Mission</span>
-            <h2 className="mission-title">Empowering OGA-UK alumni worldwide</h2>
+            <span className="mission-label">Our Mission</span>
+            <h2 className="mission-title">
+              Empowering Tamil women through sisterhood
+            </h2>
             <p className="mission-description">
-              We connect, support, and inspire graduates from across the UK to make a difference. Our 
-              community transcends boundaries, driving innovation and positive change globally.
+              We connect, support, and inspire our alumni to uphold our motto
+              "Dare to do right. Dare to be true." Our sisterhood spans
+              generations, fostering excellence in service and professional
+              achievement.
             </p>
             <div className="mission-links">
-              <a href="#about" className="mission-link">About us</a>
+              <a href="#about" className="mission-link">
+                Our History
+              </a>
               <a href="#explore" className="mission-link">
-                Explore
+                Join Us
                 <span className="arrow">→</span>
               </a>
             </div>
@@ -32,59 +38,67 @@ const MissionSection = () => {
       <section className="benefits">
         <div className="benefits-container">
           <div className="benefits-header">
-            <span className="section-label">Benefits</span>
-            <h2 className="benefits-title">Your OGA-UK advantage</h2>
+            <span className="section-label">Member Benefits</span>
+            <h2 className="benefits-title">Your OGA sisterhood advantage</h2>
             <p className="benefits-subtitle">
-              Unlock exclusive opportunities designed for UK alumni
+              Exclusive opportunities and lifelong connections for our alumni
+              community
             </p>
           </div>
-          
+
           <div className="benefits-grid">
             <div className="benefit-card">
               <div className="benefit-image">
                 <div className="benefit-placeholder">💼</div>
               </div>
               <div className="benefit-content">
-                <span className="benefit-category">Career</span>
-                <h3 className="benefit-title">Professional development and networking</h3>
+                <span className="benefit-category">Professional Growth</span>
+                <h3 className="benefit-title">
+                  Career networking and mentorship
+                </h3>
                 <p className="benefit-description">
-                  Access job boards, mentorship programs, and industry insights from UK professionals.
+                  Connect with successful alumni across industries for
+                  mentorship, job opportunities, and professional guidance.
                 </p>
-                <a href="#explore" className="benefit-link">
+                <a href="#career" className="benefit-link">
                   Explore
                   <span className="arrow">→</span>
                 </a>
               </div>
             </div>
-            
+
             <div className="benefit-card">
               <div className="benefit-image">
                 <div className="benefit-placeholder">📚</div>
               </div>
               <div className="benefit-content">
-                <span className="benefit-category">Resources</span>
-                <h3 className="benefit-title">Knowledge and learning</h3>
+                <span className="benefit-category">Education</span>
+                <h3 className="benefit-title">
+                  Scholarships and learning resources
+                </h3>
                 <p className="benefit-description">
-                  Unlimited access to research papers, webinars, and online courses from UK institutions.
+                  Access educational scholarships, professional development
+                  courses, and exclusive learning opportunities.
                 </p>
-                <a href="#access" className="benefit-link">
+                <a href="#education" className="benefit-link">
                   Access
                   <span className="arrow">→</span>
                 </a>
               </div>
             </div>
-            
+
             <div className="benefit-card">
               <div className="benefit-image">
                 <div className="benefit-placeholder">🌐</div>
               </div>
               <div className="benefit-content">
-                <span className="benefit-category">Community</span>
-                <h3 className="benefit-title">Global connections</h3>
+                <span className="benefit-category">Community Service</span>
+                <h3 className="benefit-title">Global sisterhood network</h3>
                 <p className="benefit-description">
-                  Engage with alumni chapters across the UK and build lasting professional relationships.
+                  Join community service projects and connect with alumni
+                  worldwide who share our values of service and excellence.
                 </p>
-                <a href="#connect" className="benefit-link">
+                <a href="#community" className="benefit-link">
                   Connect
                   <span className="arrow">→</span>
                 </a>
