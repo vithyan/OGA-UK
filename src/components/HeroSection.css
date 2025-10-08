@@ -107,7 +107,7 @@
 .hero-image-placeholder::before {
   content: "📚";
   font-size: 4rem;
-  z-index: 1;
+  z-index: 1; 
   position: relative;
 }
 
