@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Alumni from './pages/Alumni';
+import About from './pages/About';
 import Events from './pages/Events';
-import Network from './pages/Network';
-import Resources from './pages/Resources';
+import Gallery from './pages/Gallery';
+import Donate from './pages/Donate';
+import Contact from './pages/Contact';
 import './App.css'
 
 function App() {
@@ -16,10 +17,11 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/alumni" element={<Alumni />} />
+          <Route path="/about" element={<About />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/network" element={<Network />} />
-          <Route path="/resources" element={<Resources />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>

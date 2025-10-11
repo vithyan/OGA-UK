@@ -1,7 +1,7 @@
 .collaborative {
-  background-color: #1a1a1a;
-  padding: 80px 0;
-  border-top: 1px solid #333;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+  padding: 5rem 0;
+  position: relative;
 }
 
 .collaborative-container {
@@ -19,31 +19,37 @@
 }
 
 .section-number {
-  color: #4f9cf9;
-  font-size: 0.9rem;
+  color: #FFD700;
+  font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 2px;
+  background: rgba(255, 215, 0, 0.1);
+  padding: 8px 16px;
+  border-radius: 30px;
+  display: inline-block;
+  border: 1px solid rgba(255, 215, 0, 0.2);
 }
 
 .section-subtitle {
   color: #ccc;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   margin-left: 1rem;
 }
 
 .collaborative-title {
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
   margin: 1.5rem 0;
   color: white;
+  font-family: 'Georgia', serif;
 }
 
 .collaborative-description {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   line-height: 1.6;
   color: #ccc;
   margin-bottom: 2.5rem;
@@ -54,41 +60,44 @@
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .btn-get-involved {
-  background: white;
-  color: #1a1a1a;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 4px;
+  background: rgba(255, 215, 0, 0.1);
+  color: #FFD700;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  padding: 12px 30px;
+  border-radius: 30px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .btn-get-involved:hover {
-  background-color: #f0f0f0;
-  transform: translateY(-2px);
+  background: rgba(255, 215, 0, 0.2);
+  border-color: rgba(255, 215, 0, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 215, 0, 0.2);
 }
 
 .btn-learn-more {
   background: transparent;
-  color: white;
+  color: #FFD700;
   border: none;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  padding: 10px;
 }
 
 .btn-learn-more:hover {
-  color: #4f9cf9;
+  transform: translateX(5px);
 }
 
 .arrow {
@@ -108,13 +117,21 @@
 .collaborative-image-placeholder {
   width: 100%;
   height: 400px;
-  background: linear-gradient(135deg, #2d5a27 0%, #4a7c59 100%);
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 20px;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.collaborative-image-placeholder:hover {
+  border-color: rgba(255, 215, 0, 0.5);
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.25);
 }
 
 .image-overlay {
@@ -123,11 +140,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(45, 90, 39, 0.8) 0%,
-    rgba(74, 124, 89, 0.8) 100%
-  );
+  background: radial-gradient(circle at center, rgba(255, 215, 0, 0.1), transparent);
 }
 
 .collaborative-image-placeholder::before {
@@ -135,6 +148,7 @@
   font-size: 4rem;
   z-index: 1;
   position: relative;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
 }
 
 @media (max-width: 768px) {

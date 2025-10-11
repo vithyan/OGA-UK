@@ -1,0 +1,247 @@
+.donate-page {
+  min-height: 100vh;
+}
+
+.donate-hero {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  padding: 100px 0 60px;
+  text-align: center;
+}
+
+.donate-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.donate-hero .lead {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.impact-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.impact-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.impact-card {
+  text-align: center;
+  padding: 40px 20px;
+  background: white;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-10px);
+}
+
+.impact-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.impact-card h4 {
+  color: #00f2fe;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.impact-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.donation-form-section {
+  padding: 80px 0;
+}
+
+.donation-form-card {
+  background: white;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.donation-form-card h3 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.amount-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.amount-btn {
+  flex: 1;
+  min-width: 100px;
+  padding: 15px 20px;
+  border: 2px solid #00f2fe;
+  background: white;
+  color: #00f2fe;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.amount-btn:hover,
+.amount-btn.active {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+}
+
+.input-group-text {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  font-weight: 600;
+}
+
+.form-control {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  border-color: #00f2fe;
+  box-shadow: 0 0 0 0.2rem rgba(79, 172, 254, 0.25);
+  outline: none;
+}
+
+.type-btn {
+  flex: 1;
+  padding: 12px 30px;
+  border: 2px solid #ddd;
+  background: white;
+  color: #666;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.type-btn:hover,
+.type-btn.active {
+  border-color: #00f2fe;
+  background: #00f2fe;
+  color: white;
+}
+
+.btn-donate-submit {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
+
+.btn-donate-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(79, 172, 254, 0.4);
+}
+
+.recognition-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.recognition-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.recognition-card {
+  text-align: center;
+  padding: 40px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.recognition-card:hover {
+  transform: translateY(-5px);
+}
+
+.recognition-card.platinum {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+}
+
+.recognition-card h4 {
+  font-size: 1.5rem;
+  color: #00f2fe;
+  margin-bottom: 1rem;
+}
+
+.recognition-card.platinum h4 {
+  color: white;
+}
+
+.recognition-card .amount {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.recognition-card.platinum .amount {
+  color: white;
+}
+
+.recognition-card .description {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.recognition-card.platinum .description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+  .donate-hero h1 {
+    font-size: 2rem;
+  }
+
+  .donation-form-card {
+    padding: 30px 20px;
+  }
+
+  .amount-buttons {
+    flex-direction: column;
+  }
+
+  .amount-btn {
+    width: 100%;
+  }
+}

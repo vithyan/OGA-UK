@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/neon-button";
 import "./Navigation.css";
 
 const Navigation = () => {
@@ -66,26 +67,32 @@ const Navigation = () => {
         </div>
 
         <div className="nav-menu">
-          <Link to="/alumni" className="nav-link">
-            Alumni
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
+          <Link to="/about" className="nav-link">
+            About
           </Link>
           <Link to="/events" className="nav-link">
             Events
           </Link>
-          <Link to="/network" className="nav-link">
-            News
+          <Link to="/gallery" className="nav-link">
+            Gallery
           </Link>
-          <div className="dropdown">
-            <Link to="/resources" className="nav-link dropdown-toggle">
-              Get Involved
-              <span className="dropdown-arrow">▼</span>
-            </Link>
-          </div>
+          <Link to="/donate" className="nav-link">
+            Donate
+          </Link>
+          <Link to="/contact" className="nav-link">
+            Contact
+          </Link>
         </div>
 
         <div className="nav-buttons">
-          <button className="btn-connect">Join Us</button>
-          <button className="btn-explore">Donate</button>
+          <Link to="/donate">
+            <Button variant="goldenSolid" size="default">
+              Donate Now
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>
