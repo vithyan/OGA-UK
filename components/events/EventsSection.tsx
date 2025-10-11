@@ -32,9 +32,8 @@ export function EventsSection() {
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
         >
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
             Events & Gatherings
@@ -48,9 +47,8 @@ export function EventsSection() {
         <motion.div
           className="flex flex-wrap justify-center gap-2 mb-12"
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
         >
           {filterOptions.map((option) => (
             <Button
@@ -72,9 +70,8 @@ export function EventsSection() {
             <motion.div
               key={event.id}
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
             >
               <GlassCard className="p-0 overflow-hidden h-full">
                 <div className="relative h-48">

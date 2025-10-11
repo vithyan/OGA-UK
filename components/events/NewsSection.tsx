@@ -34,7 +34,7 @@ export function NewsSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4">
             Latest News
@@ -51,7 +51,7 @@ export function NewsSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <GlassCard className="p-0 overflow-hidden h-full hover:scale-105 transition-transform">
                 <div className="relative h-48">
