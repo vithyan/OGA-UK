@@ -1,29 +1,31 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { Calendar, ArrowRight, Tag } from 'lucide-react';
-import { news } from '@/content/seed';
-import { GlassCard } from '@/components/ui/glass-card';
-import { Button } from '@/components/ui/button';
+import { motion } from "framer-motion";
+import { Calendar, ArrowRight, Tag } from "lucide-react";
+import { news } from "@/content/seed";
+import { GlassCard } from "@/components/ui/glass-card";
+import { Button } from "@/components/ui/button";
 
 export function NewsSection() {
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('en-GB', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+    return new Date(dateString).toLocaleDateString("en-GB", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
   };
 
   const getCategoryColor = (category: string) => {
     const colors = {
-      achievements: 'bg-green-500/20 text-green-400',
-      fundraising: 'bg-blue-500/20 text-blue-400',
-      sports: 'bg-orange-500/20 text-orange-400',
-      community: 'bg-purple-500/20 text-purple-400',
+      achievements: "bg-green-500/20 text-green-400",
+      fundraising: "bg-blue-500/20 text-blue-400",
+      sports: "bg-orange-500/20 text-orange-400",
+      community: "bg-purple-500/20 text-purple-400",
     } as const;
-    
-    return colors[category as keyof typeof colors] || 'bg-gray-500/20 text-gray-400';
+
+    return (
+      colors[category as keyof typeof colors] || "bg-gray-500/20 text-gray-400"
+    );
   };
 
   return (
@@ -40,7 +42,8 @@ export function NewsSection() {
             Latest News
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Stay updated with the latest achievements, developments, and stories from our community.
+            Stay updated with the latest achievements, developments, and stories
+            from our community.
           </p>
         </motion.div>
 
@@ -61,7 +64,11 @@ export function NewsSection() {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute top-4 left-4">
-                    <div className={`px-2 py-1 rounded-full text-xs font-medium ${getCategoryColor(article.category)}`}>
+                    <div
+                      className={`px-2 py-1 rounded-full text-xs font-medium ${getCategoryColor(
+                        article.category
+                      )}`}
+                    >
                       <Tag size={12} className="inline mr-1" />
                       {article.category}
                     </div>
@@ -82,7 +89,11 @@ export function NewsSection() {
                     {article.excerpt}
                   </p>
 
-                  <Button variant="ghost" size="sm" className="p-0 h-auto text-yellow-400 hover:text-yellow-300">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="p-0 h-auto text-yellow-400 hover:text-yellow-300"
+                  >
                     Read more
                     <ArrowRight size={16} className="ml-1" />
                   </Button>

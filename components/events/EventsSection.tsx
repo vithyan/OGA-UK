@@ -1,28 +1,28 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { Calendar, MapPin, Clock, Users, Filter, Download } from 'lucide-react';
-import { events } from '@/content/seed';
-import { GlassCard } from '@/components/ui/glass-card';
-import { Button } from '@/components/ui/button';
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { Calendar, MapPin, Clock, Users, Filter, Download } from "lucide-react";
+import { events } from "@/content/seed";
+import { GlassCard } from "@/components/ui/glass-card";
+import { Button } from "@/components/ui/button";
 
-const filterOptions = ['all', 'upcoming', 'past', 'formal', 'casual'];
+const filterOptions = ["all", "upcoming", "past", "formal", "casual"];
 
 export function EventsSection() {
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState("all");
 
-  const filteredEvents = events.filter(event => {
-    if (filter === 'all') return true;
+  const filteredEvents = events.filter((event) => {
+    if (filter === "all") return true;
     return event.status === filter || event.tags.includes(filter);
   });
 
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('en-GB', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+    return new Date(dateString).toLocaleDateString("en-GB", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
   };
 
@@ -39,7 +39,8 @@ export function EventsSection() {
             Events & Gatherings
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Join us for memorable occasions that strengthen our bonds and celebrate our shared legacy.
+            Join us for memorable occasions that strengthen our bonds and
+            celebrate our shared legacy.
           </p>
         </motion.div>
 
@@ -53,7 +54,7 @@ export function EventsSection() {
           {filterOptions.map((option) => (
             <Button
               key={option}
-              variant={filter === option ? 'default' : 'ghost'}
+              variant={filter === option ? "default" : "ghost"}
               size="sm"
               onClick={() => setFilter(option)}
               className="capitalize"
