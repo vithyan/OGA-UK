@@ -33,7 +33,12 @@ const About = () => {
             </div>
             <div className="col-md-6">
               <div className="about-image-placeholder">
-                <div className="placeholder-content">
+                <img 
+                  src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop" 
+                  alt="Heritage & Legacy"
+                  className="about-image"
+                />
+                <div className="image-overlay">
                   <span>📚</span>
                   <p>Heritage & Legacy</p>
                 </div>
