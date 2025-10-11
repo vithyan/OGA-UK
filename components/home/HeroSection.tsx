@@ -176,7 +176,7 @@ export function HeroSection() {
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
-              className="glass-card text-center hover:scale-105 transition-transform"
+              className="glass-card text-center hover:scale-105 transition-transform py-2 flex flex-col items-center justify-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1.4 + index * 0.1 }}
