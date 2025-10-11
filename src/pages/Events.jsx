@@ -3,6 +3,7 @@ import '../components/HeroSection.css';
 import '../components/GatewaySection.css';
 import '../components/CollaborativeSection.css';
 import '../components/MissionSection.css';
+import './Events.css';
 
 const Events = () => {
   return (
@@ -31,52 +32,98 @@ const Events = () => {
         </div>
       </section>
 
-      {/* Events Categories */}
-      <section className="gateway">
-        <div className="gateway-container">
-          <div className="gateway-header">
-            <span className="section-label">Calendar</span>
-            <h2 className="gateway-title">Upcoming Events</h2>
-            <p className="gateway-subtitle">
+      {/* Upcoming Events - Timeline Style */}
+      <section className="events-timeline-section">
+        <div className="events-container">
+          <div className="events-header">
+            <span className="section-label">
+              <span className="label-icon">📅</span>
+              Calendar 2025
+            </span>
+            <h2 className="events-title">Upcoming Events</h2>
+            <p className="events-subtitle">
               Discover events happening in your area and around the world
             </p>
           </div>
           
-          <div className="gateway-cards">
-            <div className="gateway-card">
-              <div className="card-image">
-                <div className="card-placeholder">🍽️</div>
+          <div className="events-timeline">
+            {/* Event 1 */}
+            <div className="event-item">
+              <div className="event-date">
+                <span className="month">MAR</span>
+                <span className="day">15</span>
               </div>
-              <div className="card-content">
-                <h3 className="card-title">Networking Dinners</h3>
-                <p className="card-description">
-                  Intimate gatherings in London, Manchester, Edinburgh for meaningful professional connections.
+              <div className="event-content">
+                <div className="event-badge">🍽️ Networking</div>
+                <h3 className="event-title">London Alumni Dinner</h3>
+                <p className="event-description">
+                  Intimate gathering at The Shard with distinguished alumni speakers
                 </p>
+                <div className="event-meta">
+                  <span className="event-location">📍 London, UK</span>
+                  <span className="event-time">⏰ 7:00 PM - 10:00 PM</span>
+                </div>
+                <button className="event-register-btn">Register Now →</button>
               </div>
             </div>
-            
-            <div className="gateway-card">
-              <div className="card-image">
-                <div className="card-placeholder">🎭</div>
+
+            {/* Event 2 */}
+            <div className="event-item">
+              <div className="event-date">
+                <span className="month">APR</span>
+                <span className="day">22</span>
               </div>
-              <div className="card-content">
-                <h3 className="card-title">Cultural Events</h3>
-                <p className="card-description">
-                  West End shows, art exhibitions, and cultural celebrations across UK cities.
+              <div className="event-content">
+                <div className="event-badge">💼 Career</div>
+                <h3 className="event-title">Career Development Workshop</h3>
+                <p className="event-description">
+                  Professional networking and career guidance session with industry leaders
                 </p>
+                <div className="event-meta">
+                  <span className="event-location">📍 Manchester, UK</span>
+                  <span className="event-time">⏰ 2:00 PM - 6:00 PM</span>
+                </div>
+                <button className="event-register-btn">Register Now →</button>
               </div>
             </div>
-            
-            <div className="gateway-card achievement-card">
-              <div className="card-image">
-                <div className="card-placeholder">🏆</div>
+
+            {/* Event 3 */}
+            <div className="event-item featured">
+              <div className="event-date">
+                <span className="month">JUN</span>
+                <span className="day">10</span>
               </div>
-              <div className="card-content">
-                <span className="achievement-label">Annual</span>
-                <h3 className="card-title">Awards Ceremonies</h3>
-                <p className="card-description">
-                  Celebrating outstanding achievements in the UK alumni community.
+              <div className="event-content">
+                <div className="event-badge">🏆 Annual Event</div>
+                <h3 className="event-title">OGA-UK Annual Reunion 2025</h3>
+                <p className="event-description">
+                  The biggest gathering of UK alumni worldwide - reconnect and celebrate!
                 </p>
+                <div className="event-meta">
+                  <span className="event-location">📍 London, UK</span>
+                  <span className="event-time">⏰ 6:00 PM - 11:00 PM</span>
+                </div>
+                <button className="event-register-btn">Register Now →</button>
+              </div>
+            </div>
+
+            {/* Event 4 */}
+            <div className="event-item">
+              <div className="event-date">
+                <span className="month">SEP</span>
+                <span className="day">18</span>
+              </div>
+              <div className="event-content">
+                <div className="event-badge">🎭 Cultural</div>
+                <h3 className="event-title">West End Theatre Night</h3>
+                <p className="event-description">
+                  Exclusive group booking for a West End show followed by dinner
+                </p>
+                <div className="event-meta">
+                  <span className="event-location">📍 London West End</span>
+                  <span className="event-time">⏰ 6:30 PM</span>
+                </div>
+                <button className="event-register-btn">Register Now →</button>
               </div>
             </div>
           </div>
